@@ -44,8 +44,9 @@ function Contact() {
               </div>
               <div class="form-group mb-3">
                 <label for="exampleFormControlInput1">Phone Number</label>
-                <input type="number" class="form-control" id="exampleFormControlInput1"
-                  name="phone" value={data.phone} onChange={InputEvent} placeholder="Enter Your Phone Number" />
+                <input class="form-control" id="exampleFormControlInput1"
+                  name="phone" value={data.phone} onChange={InputEvent} placeholder="Enter Your Phone Number"
+                  pattern='[0-9]{10}' />
               </div>
               <div class="form-group mb-3">
                 <label for="exampleFormControlInput1">Email</label>
